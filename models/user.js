@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema({
   zip: {type: String, default: ''},
   country: {type: String, default: ''},
   phone: {type: Number, required: true},
-  iAdmin: {type: Boolean, default: false},
+  isAdmin: {type: Boolean, default: false},
 });
 
 userSchema.virtual('id').get(function () {

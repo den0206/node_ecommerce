@@ -51,7 +51,7 @@ router.post(`/`, async (req, res) => {
   const category = await Category.findById(req.body.category);
   if (!category) {
     return res.status(400).json({
-      error: 'Invalid Category',
+      error: 'Invalid Category id',
       success: false,
     });
   }
